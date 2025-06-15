@@ -22,7 +22,7 @@ export const content = {
     projects: {
       title: "Proyectos",
       subtitle:
-        "Proyectos desarrollados para resolver problemas reales y demostrar habilidades técnicas.",
+        "Proyectos desarrollados para resolver problemas y demostrar mis habilidades tecnicas",
       items: [
         {
           title: "'Real.' - Habit Tracker",
