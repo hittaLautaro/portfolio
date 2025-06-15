@@ -10,24 +10,23 @@ export const content = {
     hero: {
       me: "Soy",
       name: "Lautaro Hitta",
-      role: "Desarrollador Backend",
+      role: "Desarrollador backend",
       description:
         "Soy un desarrollador enfocado en backend, especializado en Java y Spring Boot. Construyo aplicaciones fullstack para entregar productos completos, pero mi fuerte e interés está en la arquitectura backend y APIs.",
     },
     technologies: {
       title: "Tecnologías",
-      subtitle:
-        "Herramientas y lenguajes que utilizo para desarrollar software.",
+      subtitle: "Herramientas y lenguajes que uso para desarrollar software.",
     },
     projects: {
       title: "Proyectos",
       subtitle:
-        "Proyectos desarrollados para resolver problemas y demostrar mis habilidades tecnicas",
+        "Proyectos desarrollados para resolver problemas y demostrar mis habilidades técnicas.",
       items: [
         {
           title: "'Real.' - Habit Tracker",
           description:
-            "Una aplicación full-stack para la gestión de hábitos, que incluye autenticación de usuarios, verificación por email, organización mediante arrastrar y soltar, almacenamiento en caché de solicitudes, programación de tareas y gestión de hábitos en tiempo real.",
+            "Una aplicación full-stack para la gestión de hábitos, que incluye autenticación de usuarios, verificación por correo electrónico, organización mediante arrastrar y soltar, almacenamiento en caché de solicitudes, planificación de tareas y gestión de hábitos en tiempo real.",
           tech: [
             "Java",
             "Spring Boot",
@@ -52,7 +51,7 @@ export const content = {
       items: [
         {
           degree: "Analista de Sistemas",
-          school: "Universidad ORT",
+          school: "ORT Universidad",
           year: "2023 - Actualidad",
           description:
             "Especialización en desarrollo de software y arquitectura de sistemas.",
@@ -79,7 +78,8 @@ export const content = {
     },
     projects: {
       title: "Projects",
-      subtitle: "Real-world applications I've developed professionally.",
+      subtitle:
+        "Projects developed to solve problems and showcase my technical skills.",
       items: [
         {
           title: "'Real.' - Habit Tracker",
@@ -108,7 +108,7 @@ export const content = {
       title: "Education",
       items: [
         {
-          degree: "Pre-degree in Computer Science",
+          degree: "Technical degree in Computer Science",
           school: "ORT University",
           year: "2023 - Present",
           description:
