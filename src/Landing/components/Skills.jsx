@@ -106,7 +106,7 @@ const Skills = ({ id }) => {
                         className={`absolute inset-0 bg-gradient-to-br from-gray-500/10 ${section.hover.to} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                       ></div>
 
-                      <div className="relative text-4xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
+                      <div className="relative text-4xl md:text-6xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
                         <div
                           className={`absolute inset-0 ${section.hover.glow} rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                         ></div>
@@ -114,7 +114,7 @@ const Skills = ({ id }) => {
                       </div>
 
                       <h3
-                        className={`text-nowrap text-xs text-gray-200 md:text-gray-500 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
+                        className={`text-nowrap text-xs md:text-sm text-gray-200 md:text-gray-500 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
                       >
                         {tech.name}
                       </h3>

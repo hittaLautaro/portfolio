@@ -9,7 +9,7 @@ const Projects = ({ id }) => {
 
   return (
     <section id={id} className="py-5 md:py-20 px-6">
-      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 p-5 lg:pt-10 rounded-xl">
+      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
         <div className="mb-10 md:mb-10">
           <h2 className="text-3xl md:text-5xl text-left font-bold text-zinc-200 ">
             {t.projects.title}
@@ -23,7 +23,7 @@ const Projects = ({ id }) => {
           {t.projects.items.map((project, index) => (
             <div
               key={index}
-              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50  transition-all duration-300 hover:transform hover:scale-105 group"
+              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50  transition-all duration-300 hover:transform hover:scale-105 group md:mb-6"
             >
               <div className="bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-zinc-900/50 ">
                 <img
