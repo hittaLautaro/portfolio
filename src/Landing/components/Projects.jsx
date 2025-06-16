@@ -23,7 +23,7 @@ const Projects = ({ id }) => {
           {t.projects.items.map((project, index) => (
             <div
               key={index}
-              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50  transition-all duration-300 hover:transform hover:scale-105 group md:mb-6"
+              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50  transition-all duration-300 hover:transform hover:scale-105 group mb-3 md:mb-6"
             >
               <div className="bg-neutral-900 rounded-lg mb-4 flex items-center justify-center border border-zinc-900/50 ">
                 <img

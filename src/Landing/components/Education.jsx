@@ -19,7 +19,7 @@ const Education = ({ id }) => {
           {t.education.items.map((item, index) => (
             <div
               key={index}
-              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50 transition-colors duration-300 md:mb-8"
+              className="bg-zinc-900/5 rounded-xl p-6 border border-zinc-700/50 transition-colors duration-300 mb-5 md:mb-8"
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <h3 className="text-sm md:text-xl font-bold text-gray-300">
