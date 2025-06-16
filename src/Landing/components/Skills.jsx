@@ -44,13 +44,13 @@ const Skills = ({ id }) => {
   ];
 
   return (
-    <section id={id} className="py-20 px-6 bg-black mt-3">
-      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-10 pt-8 rounded-xl">
-        <div className="mb-10">
-          <h2 className="text-4xl md:text-5xl text-left font-bold text-zinc-200 ml-2">
+    <section id={id} className="py-5 md:py-20 px-6 bg-black mt-3">
+      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
+        <div className="mb-5 md:mb-10">
+          <h2 className="text-3xl md:text-5xl text-left font-bold text-zinc-200 ">
             {t.technologies.title}
           </h2>
-          <h2 className="text-sm md:text-lg text-left font-semibold text-zinc-400 mt-2 ml-2">
+          <h2 className="text-sm md:text-lg text-left font-semibold text-zinc-400 mt-2">
             {t.technologies.subtitle}
           </h2>
         </div>
@@ -90,14 +90,14 @@ const Skills = ({ id }) => {
               },
             ].map((section) => (
               <div key={section.title}>
-                <div className="text-left mb-3 font-mono font-bold text-lg text-zinc-300 ml-1">
+                <div className="text-left mb-3 font-mono font-bold text-sm lg:text-lg text-zinc-300 ml-1">
                   {section.title}
                 </div>
-                <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 mb-10 font-mono">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-10 font-mono">
                   {section.skills.map((tech, index) => (
                     <div
                       key={index}
-                      className={`group relative flex flex-col items-center justify-center  min-h-32 min-w-32 bg-zinc-900/5 backdrop-blur-sm rounded-2xl shadow-sm ${section.hover.shadow} transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border border-zinc-700/50 ${section.hover.border}`}
+                      className={`group relative flex flex-col items-center justify-center min-h-20 min-w-28 sm:min-h-32 sm:min-w-32 lg:min-h-32 lg:min-w-32 bg-zinc-900/5 backdrop-blur-sm rounded-2xl shadow-sm ${section.hover.shadow} transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 border border-zinc-700/50 ${section.hover.border}`}
                       style={{
                         animationDelay: `${index * 0.1}s`,
                       }}
@@ -106,7 +106,7 @@ const Skills = ({ id }) => {
                         className={`absolute inset-0 bg-gradient-to-br from-gray-500/10 ${section.hover.to} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                       ></div>
 
-                      <div className="relative text-6xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
+                      <div className="relative text-4xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
                         <div
                           className={`absolute inset-0 ${section.hover.glow} rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                         ></div>
@@ -114,7 +114,7 @@ const Skills = ({ id }) => {
                       </div>
 
                       <h3
-                        className={`text-nowrap text-sm text-gray-200 md:text-gray-500 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
+                        className={`text-nowrap text-xs text-gray-200 md:text-gray-500 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
                       >
                         {tech.name}
                       </h3>

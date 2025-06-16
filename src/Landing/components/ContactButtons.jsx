@@ -51,8 +51,8 @@ const ContactButtons = () => {
       </button>
 
       {showEmailModal && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
-          <div className="bg-black border border-zinc-800 rounded-xl p-10 w-full max-w-2xl mx-4 relative text-center shadow-lg">
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 ">
+          <div className="bg-black border border-zinc-800 rounded-xl p-10 w-full max-w-xl mx-4 relative text-center shadow-lg">
             <button
               onClick={() => setShowEmailModal(false)}
               className="absolute top-4 right-4 text-gray-400 hover:text-gray-200 transition"
@@ -61,8 +61,8 @@ const ContactButtons = () => {
               <X size={28} />
             </button>
 
-            <h3 className="text-2xl font-semibold mb-6 text-white">
-              Contact Email
+            <h3 className="text-2xl font-semibold mb-6 text-white text-left font-mono">
+              {t.misc.contact_modal.title}
             </h3>
 
             <img
@@ -70,14 +70,14 @@ const ContactButtons = () => {
               alt="Email"
               className="mx-auto mb-6 pointer-events-none select-none"
               draggable={false}
-              style={{ height: "110px", maxWidth: "100%" }}
+              style={{ height: "80px", maxWidth: "100%" }}
             />
 
             <button
               onClick={handleCopyEmail}
               className="bg-lime-500 hover:bg-lime-600 text-black px-8 py-3 rounded-lg text-lg font-semibold transition"
             >
-              {copied ? "Copied!" : "Copy Email"}
+              {copied ? t.misc.contact_modal.copied : t.misc.contact_modal.copy}
             </button>
           </div>
         </div>

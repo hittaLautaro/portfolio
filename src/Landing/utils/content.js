@@ -16,7 +16,8 @@ export const content = {
     },
     technologies: {
       title: "Tecnologías",
-      subtitle: "Herramientas y lenguajes que uso para desarrollar software.",
+      subtitle:
+        "Herramientas y lenguajes que uso para desarrollar software robusto.",
     },
     projects: {
       title: "Proyectos",
@@ -26,7 +27,7 @@ export const content = {
         {
           title: "'Real.' - Habit Tracker",
           description:
-            "Una aplicación full-stack para la gestión de hábitos, que incluye autenticación de usuarios, verificación por correo electrónico, organización mediante arrastrar y soltar, almacenamiento en caché de solicitudes, planificación de tareas y gestión de hábitos en tiempo real.",
+            "Una aplicación full-stack para la gestión de hábitos, que incluye autenticación de usuarios, verificación por correo electrónico, organización de habitos arrastrables, almacenamiento en caché de solicitudes, y gestión de hábitos en tiempo real.",
           tech: [
             "Java",
             "Spring Boot",
@@ -58,6 +59,13 @@ export const content = {
         },
       ],
     },
+    misc: {
+      contact_modal: {
+        title: "Email de Contacto",
+        copy: "Copiar Email",
+        copied: "Copiado",
+      },
+    },
   },
   en: {
     nav: {
@@ -84,7 +92,7 @@ export const content = {
         {
           title: "'Real.' - Habit Tracker",
           description:
-            "A full-stack habit tracker, it features user authentication, email verification, drag and drop organization, request caching, scheduling, and real-time habit management.",
+            "A full-stack habit tracker, it features user authentication, email verification, drag and drop organization, request caching, and real-time habit management.",
           tech: [
             "Java",
             "Spring Boot",
@@ -115,6 +123,13 @@ export const content = {
             "Specialization in software development and systems architecture.",
         },
       ],
+    },
+    misc: {
+      contact_modal: {
+        title: "Contact Email",
+        copy: "Copy Email",
+        copied: "Copied",
+      },
     },
   },
 };

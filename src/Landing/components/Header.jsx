@@ -59,7 +59,7 @@ const Header = () => {
 
           <button
             onClick={() => setLanguage(language === "es" ? "en" : "es")}
-            className="bg-zinc-900/40 text-zinc-300 px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform duration-200"
+            className="bg-zinc-900/40 border border-zinc-700/50 text-zinc-300 px-3 py-1 rounded-full text-sm font-semibold hover:scale-105 transition-transform duration-200"
             title={language === "es" ? "Cambiar a inglés" : "Switch to Spanish"}
           >
             {language.toUpperCase()}

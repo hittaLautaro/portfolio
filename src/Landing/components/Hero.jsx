@@ -48,37 +48,37 @@ const Hero = ({ id, isVisible }) => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-28 max-w-6xl mx-auto mb-14">
+        <div className="flex flex-col-reverse lg:flex-row items-center gap-5 lg:gap-28 max-w-6xl mx-auto mb-14">
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-6">
               <div className="font-bold">
-                <span className="md:text-7xl">
+                <span className="md:text-7xl text-3xl">
                   {language === "es" ? "Soy " : "I'm "}
                   <span className="">{t.hero.name}</span>
                 </span>
               </div>
-              <span className="md:text-5xl font-mono text-lime-400 font-normal">
+              <span className="md:text-5xl text-2xl font-mono text-lime-400 font-normal">
                 {t.hero.role}
               </span>
             </div>
 
-            <p className="text-xl text-gray-300 mb-8 max-w-2xl">
+            <p className="text-sm text-gray-300 mb-8 max-w-2xl">
               {t.hero.description}
             </p>
-            <div className="w-full flex justify-start">
+            <div className="w-full flex  lg:justify-start justify-center">
               <ContactButtons />
             </div>
           </div>
 
           <div className="flex-shrink-0">
-            <div className="w-64 h-64 md:w-96 md:h-96 bg-gradient-to-br  rounded-full flex items-center justify-center border border-zinc-900"></div>
+            <div className="w-40 h-40 md:w-96 md:h-96 bg-gradient-to-br  rounded-full flex items-center justify-center border border-zinc-900"></div>
           </div>
         </div>
       </div>
 
       <button
         onClick={() => scrollToSection("skills")}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce"
+        className="absolute bottom-8 left-[calc(1/2)]  transform -translate-x-1/2 animate-bounce "
       >
         <ChevronDown className="w-8 h-8 text-lime-400" />
       </button>
