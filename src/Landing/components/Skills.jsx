@@ -44,8 +44,11 @@ const Skills = ({ id }) => {
   ];
 
   return (
-    <section id={id} className="py-5 md:py-20 px-6 bg-black mt-3">
-      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
+    <section
+      id={id}
+      className="py-5 md:py-20 px-3 sm:px-10 lg:px-20 bg-black mt-3"
+    >
+      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl ">
         <div className="mb-5 md:mb-10">
           <h2 className="text-3xl md:text-5xl text-left font-bold text-zinc-200 ">
             {t.technologies.title}
@@ -93,7 +96,7 @@ const Skills = ({ id }) => {
                 <div className="text-left mb-3 font-mono font-bold text-sm lg:text-lg text-zinc-300 ml-1">
                   {section.title}
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-10 font-mono">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10 font-mono">
                   {section.skills.map((tech, index) => (
                     <div
                       key={index}
