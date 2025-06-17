@@ -57,7 +57,7 @@ const Hero = ({ id, isVisible }) => {
                   <span className="">{t.hero.name}</span>
                 </span>
               </div>
-              <span className=" text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-mono text-lime-400 font-normal">
+              <span className=" text-xl md:text-3xl lg:text-4xl xl:text-5xl font-mono text-lime-400 font-normal">
                 {t.hero.role}
               </span>
             </div>

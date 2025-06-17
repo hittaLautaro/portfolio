@@ -10,7 +10,7 @@ export const content = {
     hero: {
       me: "Soy",
       name: "Lautaro Hitta",
-      role: "Desarrollador backend",
+      role: "Desarrollador Backend",
       description:
         "Soy un desarrollador enfocado en backend, especializado en Java y Spring Boot. Construyo aplicaciones fullstack para entregar productos completos, pero mi fuerte e interés está en la arquitectura backend y APIs.",
     },

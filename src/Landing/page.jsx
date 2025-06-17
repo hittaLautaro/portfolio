@@ -35,8 +35,8 @@ const LandingPage = () => {
       <Projects id="projects" />
       <Education id="education" />
 
-      <footer className="border-t border-zinc-700/50 py-8 text-center text-gray-400">
-        <p>© 2025 Lautaro Hitta - Web Developer Portfolio</p>
+      <footer className="border-t border-zinc-700/50 py-8 text-center  text-gray-400">
+        <div className="text-xs">© 2025 Lautaro Hitta - Portfolio</div>
       </footer>
     </div>
   );

@@ -8,7 +8,10 @@ const Projects = ({ id }) => {
   const t = content[language];
 
   return (
-    <section id={id} className="py-5 md:py-20 px-6">
+    <section
+      id={id}
+      className="py-5 md:py-20 px-3 sm:px-10 lg:px-20 bg-black mt-3"
+    >
       <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
         <div className="mb-10 md:mb-10">
           <h2 className="text-3xl md:text-5xl text-left font-bold text-zinc-200 ">
