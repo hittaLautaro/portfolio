@@ -16,6 +16,7 @@ import {
   SiPostgresql,
   SiJsonwebtokens,
   SiPostman,
+  SiJavascript,
 } from "react-icons/si";
 
 const Skills = ({ id }) => {
@@ -32,6 +33,7 @@ const Skills = ({ id }) => {
   ];
 
   const front = [
+    { name: "JavaScript", icon: <SiJavascript /> },
     { name: "React", icon: <SiReact /> },
     { name: "TailwindCSS", icon: <SiTailwindcss /> },
   ];
