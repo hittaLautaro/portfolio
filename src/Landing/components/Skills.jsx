@@ -46,22 +46,19 @@ const Skills = ({ id }) => {
   ];
 
   return (
-    <section
-      id={id}
-      className="py-5 md:py-20 px-3 sm:px-10 lg:px-20 bg-black mt-3"
-    >
-      <div className="max-w-6xl mx-auto text-center border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
-        <div className="mb-5 md:mb-10">
-          <h2 className="text-3xl md:text-5xl text-left font-bold text-zinc-200 ">
+    <section id={id} className="py-3 md:py-28 px-2 sm:px-6 bg-black mt-2">
+      <div className="max-w-5xl mx-auto text-center border border-zinc-700/50 px-4 pt-4 lg:px-9 lg:pt-9 lg:pb-3 rounded-xl">
+        <div className="mb-3 md:mb-8">
+          <h2 className="text-3xl md:text-4xl text-left font-bold text-zinc-200">
             {t.technologies.title}
           </h2>
-          <h2 className="text-sm md:text-lg text-left font-semibold text-zinc-400 mt-2">
+          <h2 className="text-sm md:text-base text-left font-semibold text-zinc-400 mt-1">
             {t.technologies.subtitle}
           </h2>
         </div>
 
         <section className="px-auto bg-black">
-          <div className="max-w-6xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             {[
               {
                 title: "BACKEND",
@@ -95,10 +92,10 @@ const Skills = ({ id }) => {
               },
             ].map((section) => (
               <div key={section.title}>
-                <div className="text-left mb-3 font-mono font-bold text-sm lg:text-lg text-zinc-300 ml-1">
+                <div className="text-left mb-3 font-mono font-bold text-sm lg:text-base text-zinc-300 ml-1">
                   {section.title}
                 </div>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-10 font-mono">
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-10 font-mono">
                   {section.skills.map((tech, index) => (
                     <div
                       key={index}
@@ -111,7 +108,7 @@ const Skills = ({ id }) => {
                         className={`absolute inset-0 bg-gradient-to-br from-gray-500/10 ${section.hover.to} rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                       ></div>
 
-                      <div className="relative text-4xl md:text-6xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
+                      <div className="relative text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform duration-300 filter group-hover:drop-shadow-lg">
                         <div
                           className={`absolute inset-0 ${section.hover.glow} rounded-full blur-md opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
                         ></div>
@@ -119,7 +116,7 @@ const Skills = ({ id }) => {
                       </div>
 
                       <h3
-                        className={`text-nowrap text-xs md:text-sm text-gray-200 md:text-gray-500 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
+                        className={`text-nowrap text-xs md:text-xs mt-1 text-gray-200 md:text-zinc-300 group-hover:text-gray-200 transition-colors duration-300 text-center leading-tight`}
                       >
                         {tech.name}
                       </h3>

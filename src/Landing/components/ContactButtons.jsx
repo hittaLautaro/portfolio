@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../utils/content.js";
 import emailRender from "../../assets/email-render.png";
-import { Mail, Github, Linkedin, X } from "lucide-react";
+import { Mail, Github, Linkedin, X, Download } from "lucide-react";
 const ContactButtons = () => {
   const [showEmailModal, setShowEmailModal] = useState(false);
   const [copied, setCopied] = useState(false);
@@ -22,6 +22,18 @@ const ContactButtons = () => {
 
   return (
     <div className="flex justify-center gap-6">
+      <a
+        href="/LautaroHitta_CV.pdf"
+        download="LautaroHitta_CV.pdf"
+        className="bg-zinc-900/40 hover:bg-zinc-900 p-4 rounded-3xl transition-colors duration-300 flex flex-row items-center font-normal text-zinc-400"
+        aria-label="Descargar CV"
+      >
+        <Download className="w-6 h-6" />
+        <span className="ml-2.5 font-semibold font-mono hidden sm:block">
+          {language === "es" ? "Descargar CV" : "Download Resume"}
+        </span>
+      </a>
+
       <a
         href="https://github.com/hittaLautaro"
         target="_blank"

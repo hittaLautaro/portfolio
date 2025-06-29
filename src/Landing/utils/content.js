@@ -25,7 +25,7 @@ export const content = {
         "Proyectos desarrollados para resolver problemas y demostrar mis habilidades técnicas.",
       items: [
         {
-          title: "'Real.' - Habit Tracker",
+          title: "Real.",
           description:
             "Una aplicación full-stack para la gestión de hábitos, que incluye autenticación de usuarios, verificación por correo electrónico, organización de habitos arrastrables, almacenamiento en caché de solicitudes, y gestión de hábitos en tiempo real.",
           tech: [
@@ -90,7 +90,7 @@ export const content = {
         "Projects developed to solve problems and showcase my technical skills.",
       items: [
         {
-          title: "'Real.' - Habit Tracker",
+          title: "Real.",
           description:
             "A full-stack habit tracker, it features user authentication, email verification, drag and drop organization, request caching, and real-time habit management.",
           tech: [

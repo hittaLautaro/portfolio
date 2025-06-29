@@ -7,10 +7,13 @@ const Education = ({ id }) => {
   const t = content[language];
 
   return (
-    <section id={id} className="py-5 md:py-20 px-6">
-      <div className="max-w-6xl mx-auto text-left border border-zinc-700/50 px-5 pt-5 lg:px-8 lg:pt-10 rounded-xl">
-        <div className="mb-5 md:mb-10">
-          <h3 className="text-3xl md:text-5xl  font-bold text-zinc-300">
+    <section
+      id={id}
+      className="py-3 md:pt-28 md:pb-60 px-2 sm:px-6 bg-black mt-2"
+    >
+      <div className="max-w-5xl mx-auto text-left border border-zinc-700/50 px-4 pt-4 lg:px-9 lg:pt-9 lg:pb-3 rounded-xl">
+        <div className="mb-3 md:mb-8">
+          <h3 className="text-3xl md:text-4xl font-bold text-zinc-200">
             {t.education.title}
           </h3>
         </div>

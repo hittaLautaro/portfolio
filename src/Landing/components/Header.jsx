@@ -43,10 +43,10 @@ const Header = () => {
           }}
           className="text-xl bg-gradient-to-r from-lime-400 to-yellow-400 bg-clip-text text-transparent font-mono transition-transform duration-300 hover:scale-105"
         >
-          {"{"} Lautaro Hitta {"}"}
+          {"</> Lautaro Hitta"}
         </button>
 
-        <div className="hidden md:flex space-x-8 font-mono font-normal  ">
+        <div className="hidden md:flex space-x-8 font-sans font-medium text-zinc-300 lg:text-base mt-1 gap-3">
           {Object.entries(t.nav).map(([key, value]) => (
             <button
               key={key}

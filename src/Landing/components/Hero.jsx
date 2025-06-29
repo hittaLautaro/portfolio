@@ -1,4 +1,3 @@
-import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { content } from "../utils/content.js";
 import { ChevronDown } from "lucide-react";
@@ -39,7 +38,7 @@ const Hero = ({ id, isVisible }) => {
   return (
     <section
       id={id}
-      className="min-h-screen flex items-center justify-center px-6 pt-20"
+      className="min-h-screen flex items-center justify-center px-6 pt-20 pb-10"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-950 to-black -z-10"></div>
 
