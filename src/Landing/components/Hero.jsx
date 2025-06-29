@@ -2,6 +2,8 @@ import { useLanguage } from "../context/LanguageContext";
 import { content } from "../utils/content.js";
 import { ChevronDown } from "lucide-react";
 import ContactButtons from "./ContactButtons.jsx";
+import { HyperText } from "@/components/magicui/hyper-text";
+import { TypingAnimation } from "@/components/magicui/typing-animation";
 
 const Hero = ({ id, isVisible }) => {
   const scrollToSection = (sectionId) => {
@@ -51,10 +53,11 @@ const Hero = ({ id, isVisible }) => {
           <div className="flex-1 text-center lg:text-left">
             <div className="mb-6">
               <div className="font-bold text-balance">
-                <span className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-nowrap">
-                  {language === "es" ? "Soy " : "I'm "}
-                  <span className="">{t.hero.name}</span>
-                </span>
+                <TypingAnimation className="text-3xl md:text-5xl lg:text-6xl xl:text-7xl text-nowrap">
+                  {language === "es"
+                    ? "Soy " + t.hero.name
+                    : "I'm " + t.hero.name}
+                </TypingAnimation>
               </div>
               <span className=" text-xl md:text-3xl lg:text-4xl xl:text-5xl font-mono text-lime-400 font-normal">
                 {t.hero.role}

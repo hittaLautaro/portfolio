@@ -93,7 +93,10 @@ const Skills = ({ id }) => {
             ].map((section) => (
               <div key={section.title}>
                 <div className="text-left mb-3 font-mono font-bold text-sm lg:text-base text-zinc-300 ml-1">
-                  {section.title}
+                  <h2 className="text-left mb-3 font-mono font-bold text-sm lg:text-base text-zinc-300 ml-1">
+                    {" "}
+                    {section.title}{" "}
+                  </h2>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-7 gap-4 mb-10 font-mono">
                   {section.skills.map((tech, index) => (
