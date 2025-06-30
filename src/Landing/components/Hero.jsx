@@ -4,6 +4,16 @@ import { ChevronDown } from "lucide-react";
 import ContactButtons from "./ContactButtons.jsx";
 import { HyperText } from "@/components/magicui/hyper-text";
 import { TypingAnimation } from "@/components/magicui/typing-animation";
+import {
+  SiDocker,
+  SiJavascript,
+  SiReact,
+  SiSpringboot,
+  SiSpringsecurity,
+  SiTailwindcss,
+} from "react-icons/si";
+import { OrbitingCircles } from "@/components/magicui/orbiting-circles";
+import { FaJava } from "react-icons/fa";
 
 const Hero = ({ id, isVisible }) => {
   const scrollToSection = (sectionId) => {
@@ -72,10 +82,52 @@ const Hero = ({ id, isVisible }) => {
             </div>
           </div>
 
-          <div className="flex-shrink-0">
-            <div className="w-40 h-40  md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-96 xl:h-96 bg-gradient-to-br  rounded-full flex items-center justify-center border border-zinc-900">
-              {/* foto */}
-            </div>
+          <div className="w-40 h-40  md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-96 xl:h-96 bg-gradient-to-br  rounded-full flex items-center justify-center">
+            <OrbitingCircles radius={80} className="block sm:hidden">
+              <FaJava className="w-6 h-6" />
+              <SiSpringboot className="w-6 h-6" />
+              <SiSpringsecurity className="w-6 h-6" />
+              <SiDocker className="w-6 h-6" />
+              <SiReact className="w-6 h-6" />
+              <SiTailwindcss className="w-6 h-6" />
+              <SiJavascript className="w-6 h-6" />
+            </OrbitingCircles>
+            <OrbitingCircles radius={100} className="hidden sm:block md:hidden">
+              <FaJava className="w-7 h-7" />
+              <SiSpringboot className="w-7 h-7" />
+              <SiSpringsecurity className="w-7 h-7" />
+              <SiDocker className="w-7 h-7" />
+              <SiReact className="w-7 h-7" />
+              <SiTailwindcss className="w-7 h-7" />
+              <SiJavascript className="w-7 h-7" />
+            </OrbitingCircles>
+            <OrbitingCircles radius={120} className="hidden md:block lg:hidden">
+              <FaJava className="w-8 h-8" />
+              <SiSpringboot className="w-8 h-8" />
+              <SiSpringsecurity className="w-8 h-8" />
+              <SiDocker className="w-8 h-8" />
+              <SiReact className="w-8 h-8" />
+              <SiTailwindcss className="w-8 h-8" />
+              <SiJavascript className="w-8 h-8" />
+            </OrbitingCircles>
+            <OrbitingCircles radius={150} className="hidden lg:block xl:hidden">
+              <FaJava className="w-10 h-10" />
+              <SiSpringboot className="w-10 h-10" />
+              <SiSpringsecurity className="w-10 h-10" />
+              <SiDocker className="w-10 h-10" />
+              <SiReact className="w-10 h-10" />
+              <SiTailwindcss className="w-10 h-10" />
+              <SiJavascript className="w-10 h-10" />
+            </OrbitingCircles>
+            <OrbitingCircles radius={180} className="hidden xl:block">
+              <FaJava className="w-12 h-12" />
+              <SiSpringboot className="w-12 h-12" />
+              <SiSpringsecurity className="w-12 h-12" />
+              <SiDocker className="w-12 h-12" />
+              <SiReact className="w-12 h-12" />
+              <SiTailwindcss className="w-12 h-12" />
+              <SiJavascript className="w-12 h-12" />
+            </OrbitingCircles>
           </div>
         </div>
       </div>
